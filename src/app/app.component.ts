@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'firstapp';
+  title = 'BI7';
+  test='This is text'
+  nb=8
+  msg=""
+  methodeA(){ return 2}
+  afficherMsg(){
+    this.msg="This is a new msg"
+  }
+
 }
