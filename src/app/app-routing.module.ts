@@ -5,12 +5,14 @@ import { AppartementComponent } from './appartement/appartement.component';
 import { HomeComponent } from './home/home.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { ResidenceDetailsComponent } from './residence-details/residence-details.component';
+import { AddAppartmentComponent } from './add-appartment/add-appartment.component';
 
 const routes: Routes = [
   {path:"", redirectTo:"home", pathMatch:"full"},
   {path:"home", component:HomeComponent},
   {path:"residence", component:ResidencesComponent},
   {path:"residence/details/:id", component:ResidenceDetailsComponent},
+  {path:"appartment/add", component: AddAppartmentComponent},
   {path:"appartment/:id", component: AppartementComponent},
   {path:"**", component:NotfoundComponent},
 ];

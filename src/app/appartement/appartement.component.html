@@ -1,1 +1,14 @@
-<p>appartement works!</p>
+<div class="container">
+    <h1>Appartment List</h1>
+    <div class="row">
+        <div *ngFor="let a of apparList" class="card col-3" style="width: 18rem;">
+            <img [src]="a.residence.image" class="card-img-top" [alt]="a.residence.name">
+            <div class="card-body">
+              <h5 class="card-title"> {{ a.category }} </h5>
+              <p class="card-text"> {{ a.terrasse }} </p>
+              <a href="#" class="btn btn-primary">Details</a>
+              <button class="btn btn-danger" (click)="deleteAppartment(a.id)" >Delete</button>
+            </div>
+          </div>
+    </div>
+</div>
