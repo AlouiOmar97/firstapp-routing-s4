@@ -16,6 +16,7 @@ import { AnnonceModule } from './annonce/annonce.module';
 import { AddAppartmentComponent } from './add-appartment/add-appartment.component';
 import { HttpClientModule } from "@angular/common/http";
 import { AppartmentCardComponent } from './appartment-card/appartment-card.component';
+import { UpdateAppartmentComponent } from './update-appartment/update-appartment.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,8 @@ import { AppartmentCardComponent } from './appartment-card/appartment-card.compo
     AppaetementComponent,
     ResidenceDetailsComponent,
     AddAppartmentComponent,
-    AppartmentCardComponent
+    AppartmentCardComponent,
+    UpdateAppartmentComponent
   ],
   imports: [
     BrowserModule,

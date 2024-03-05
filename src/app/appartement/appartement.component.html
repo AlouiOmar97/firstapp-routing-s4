@@ -1,14 +1,14 @@
 <div class="container">
     <h1>Appartment List</h1>
+    Valeur: <input class="form-control" type="text" [(ngModel)]="firstVal">​
+    {{newVal}}
+    <a class="nav-link" routerLink="/appartment/add" routerLinkActive="active">Add Appartment</a>
     <div class="row">
-        <div *ngFor="let a of apparList" class="card col-3" style="width: 18rem;">
-            <img [src]="a.residence.image" class="card-img-top" [alt]="a.residence.name">
-            <div class="card-body">
-              <h5 class="card-title"> {{ a.category }} </h5>
-              <p class="card-text"> {{ a.terrasse }} </p>
-              <a href="#" class="btn btn-primary">Details</a>
-              <button class="btn btn-danger" (click)="deleteAppartment(a.id)" >Delete</button>
-            </div>
-          </div>
+         <app-appartment-card class="col-3" *ngFor="let a of apparList" (prefixed)="getNewVal($event)" [initialValue]="firstVal"  [appartmentC]="a" (deleteE)="deleteAppartment($event)" ></app-appartment-card>   
     </div>
+    {{ child.childText }}<br>
+<button class="btn btn-primary m-1" (click)="child.displayTextChild()" >Display Child</button><br>
+<button class="btn btn-success m-1" (click)="startP()" >Display Text</button><br>
+{{ parentText}}
 </div>
+<app-appartment-card style="display:none;" [appartmentC]="appart" #child ></app-appartment-card>

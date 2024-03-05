@@ -1,36 +1,62 @@
 {
   "appartement": [
     {
-      "id": "1",
-      "apartNum": "251",
-      "floorNum": 44,
-      "surface": "55",
-      "terrace": "yes",
-      "surfaceTerrace": "",
-      "category": "test",
-      "description": "Consectetur perfere",
+      "terrasse": "ABCCC",
+      "numAppart": "251",
       "residence": {
         "id": 1,
-        "name": "El fel",
-        "address": "Borj Cedria",
-        "image": "../../assets/images/residence3.jpg"
-      }
+        "name": "Residence 1",
+        "address": "Address 1",
+        "image": "../../assets/images/residence2.jpg"
+      },
+      "id": "1"
     },
     {
       "id": "698b",
-      "apartNum": "251",
+      "numAppart": "251",
       "floorNum": 44,
       "surface": "55",
-      "terrace": "yes",
+      "terrasse": "yes",
       "surfaceTerrace": "",
       "category": "test",
       "description": "Consectetur perfere",
       "residence": {
-        "id": 1,
+        "id": 25,
         "name": "El fel",
         "address": "Borj Cedria",
         "image": "../../assets/images/residence2.jpg"
       }
+    },
+    {
+      "terrasse": "test223",
+      "numAppart": 5,
+      "residence": {
+        "id": 1,
+        "name": "Residence 1",
+        "address": "Address 1",
+        "image": "../../assets/images/residence2.jpg"
+      },
+      "id": "c276"
+    }
+  ],
+  "residence": [
+    {
+      "id": "1",
+      "name": "Residence 1",
+      "address": "address 1",
+      "image": "../../assets/images/residence1.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Residence 2",
+      "address": "address 2",
+      "image": "../../assets/images/residence2.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Residence 3",
+      "address": "address 3",
+      "image": "../../assets/images/residence3.jpg"
     }
   ]
 }

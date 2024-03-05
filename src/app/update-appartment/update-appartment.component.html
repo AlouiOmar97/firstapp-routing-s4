@@ -1,0 +1,24 @@
+<div class="container">
+    <h1>Update Appartment</h1>
+    <div *ngIf="appartment" >
+        <form [formGroup]="updateAppForm" >
+            <div class="row mb-3">
+              <label for="inputTerasse" class="col-sm-2 col-form-label">Terasse</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" name="terrasse" formControlName="terrasse" id="inputTerasse">
+                <div *ngIf="terrasse!.touched && terrasse!.errors?.['required']" class="alert alert-danger m-2">Terasse is required.</div>
+                <div *ngIf="terrasse!.touched && terrasse!.errors?.['minlength']" class="alert alert-danger m-2">Terasse must have at least 3 caracters.</div>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="inputNumAppart" class="col-sm-2 col-form-label">Appartment NB</label>
+              <div class="col-sm-10">
+                <input type="number" class="form-control" name="numAppart" formControlName="numAppart" id="inputNumAppart">
+                <div *ngIf="numAppart!.touched && numAppart!.errors?.['required']" class="alert alert-danger m-2">Appartment NB is required.</div>
+                <div *ngIf="numAppart!.touched && numAppart!.errors?.['min']" class="alert alert-danger m-2">Appartment NB can't be negative.</div>
+              </div>
+            </div>
+             <button type="submit" (click)="updateApp()" [disabled]="updateAppForm.invalid" class="btn btn-primary">Update</button>
+          </form>
+    </div>
+</div>

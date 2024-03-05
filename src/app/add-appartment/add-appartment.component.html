@@ -2,11 +2,11 @@
     <h1>Add Appartment</h1>
     <form [formGroup]="addAppForm" >
         <div class="row mb-3">
-          <label for="inputTerasse" class="col-sm-2 col-form-label">Terasse</label>
+          <label for="terrasse" class="col-sm-2 col-form-label">Terasse</label>
           <div class="col-sm-10">
-            <input type="text" class="form-control" name="terasse" formControlName="terasse" id="inputTerasse">
-            <div *ngIf="terasse!.touched && terasse!.errors?.['required']" class="alert alert-danger m-2">Terasse is required.</div>
-            <div *ngIf="terasse!.touched && terasse!.errors?.['minlength']" class="alert alert-danger m-2">Terasse must have at least 3 caracters.</div>
+            <input type="text" class="form-control" name="terrasse" formControlName="terrasse" id="inputTerasse">
+            <div *ngIf="terrasse!.touched && terrasse!.errors?.['required']" class="alert alert-danger m-2">Terasse is required.</div>
+            <div *ngIf="terrasse!.touched && terrasse!.errors?.['minlength']" class="alert alert-danger m-2">Terasse must have at least 3 caracters.</div>
           </div>
         </div>
         <div class="row mb-3">

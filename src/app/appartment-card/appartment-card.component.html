@@ -1,1 +1,9 @@
-<p>appartment-card works!</p>
+<div class="card" style="width: 18rem;">
+    <img [src]="appartmentC.residence.image" class="card-img-top" [alt]="appartmentC.residence.name">
+    <div class="card-body">
+      <h5 class="card-title"> {{ appartmentC.category }} </h5>
+      <p class="card-text"> {{ appartmentC.terrasse }} </p>
+      <a [routerLink]="['/appartment/update/',appartmentC.id]" class="btn btn-primary">Update</a>
+      <button class="btn btn-danger" (click)="deleteC()" >Delete</button>
+    </div>
+  </div>
